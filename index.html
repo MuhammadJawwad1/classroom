@@ -156,22 +156,23 @@
             list-style-type: none;
             margin: 0 ;
             display: block;
-            padding: 10px 0;
+            padding: 10px 20px 0 0;
 
             
             
         }
-        .left-menu ul li{
+        /* .left-menu ul li{
             padding: 15px 0;
             
             
-        }
+        } */
         .left-menu ul li a i{
             padding-right: 30px;
         }
         .left-menu ul li a {
-            font-size: larger;
-            padding: 15px 100px 10px 10px;
+            font-size: medium;
+            padding: 8px 15px;
+            display: block;
         }
         .left-menu ul li a:hover{
             background-color: rgba(156, 156, 156, 0.671);
@@ -181,6 +182,15 @@
         }
         .left-menu{
             display: inline-block;
+        }
+        .left-menu ul li span{
+            display: block;
+            font-size: small;
+            padding-left: 50px;
+            padding-top: 10px;
+        }
+        .left-menu ul li{
+            margin-bottom: 10px;
         }
 
     </style>
@@ -218,58 +228,38 @@
 
         </div>
     </header>
-
-    <div class="left-menu">
-        <ul>
-            <li><a href="#"><i class="fa-solid fa-home"style="color: #000"></i>Home</a></li>
-
-            <li><a href="#"><i class="fa-regular fa-calendar" style="color: #000000;"></i>Calender</a></li><hr>
-
-            <li><a href="#"><i class="fa-solid fa-graduation-cap" style="color: #030303;"></i>Enrolled</a></li>
-
-            <li><a href="#"><i class="fa-solid fa-clipboard-list" style="color: #000000;"></i>To-Do</a></li>
-
-            <li><a href="#"><i class="fa-brands fa-wordpress-simple" style="color: #000000;"></i>Web & Apps</a></li><hr>
-
-            <li><a href="#"><i class="fa-solid fa-box-archive" style="color: #000000;"></i>Archived</a></li>
-
-            <li><a href="#"><i class="fa-solid fa-gears" style="color: #000000;"></i>Settings</a></li>
-
-        </ul>
-    </div>
     <style>
         #work{
             height: 500px;
             width: 700px;
-            display: inline;
-            position: absolute;
+            
             margin: 20px 0 0 20px;
             padding: 30px 0 0 60px;
        }
-       #work1{
+       .course{
             width: 350px;
             height: 350px;
             border: 1px solid grey;
-            display: inline;
-            position: absolute;
+            
             border-top-right-radius: 5px;
             border-top-left-radius: 5px;
             
             
         }
-        #work1{
+        .course{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            position: relative;
         }
-        #work1 img{
+        .course img{
             height: 100px;
             width: 100%;
             box-sizing: border-box;
             border-radius: 5px;
             position: relative;
         }
-        #work1 .rizwan img{
+        .course .profile-img img{
             height: 20%;
             width: 20%;
             border-radius: 50%;
@@ -277,13 +267,13 @@
             right: 40px;
             top: 75px;
         }
-        #work1 footer{
+        .course footer{
             border-top: 1px solid gray;
             width: 100%;
             height: 15%;
             
         }
-        #work1 a{
+        .course .title{
             position: absolute;
             z-index: 1;
             text-decoration: none;
@@ -293,33 +283,55 @@
         #work a:hover{
             text-decoration: underline;
         }
-       footer .last i{
-        margin-left: 20px;
-        padding-left: 200px;
-        font-size: larger;
-        
+       
+       .container{
+        display: flex;
        }
-       footer .last-1{
-        margin-left: 20px;
-        padding-left: 280px;
-        font-size: larger;
+       .course-footer{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+       }
+       .course-footer span{
+        padding: 10px 15px;
+        font-size: x-large;
        }
         
 
     </style>
+<div class="container">
+    <div class="left-menu">
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-home"style="color: #000"></i>Home</a></li>
+
+            <li><a href="#"><i class="fa-regular fa-calendar" style="color: #000000;"></i>Calender</a></li><hr>
+
+            <li><a href="#"><i class="fa-solid fa-graduation-cap" style="color: #030303;"></i>Enrolled</a></li>
+
+            <li><a href="#"><i class="fa-solid fa-clipboard-list" style="color: #000000;"></i>&nbsp;To-Do</a></li>
+
+            <li><a href="#"><i class="fa-brands fa-wordpress-simple" style="color: #000000;"></i>Web & Apps Develop.. <span>Batch-11 Sec-J</span></a></li><hr>
+
+            <li><a href="#"><i class="fa-solid fa-box-archive" style="color: #000000;"></i>Archived</a></li>
+
+            <li><a href="#"><i class="fa-solid fa-gears" style="color: #000000;"></i>Settings</a></li>
+
+        </ul>
+    </div>
+    
     <div id="work">
-        <div id="work1">
-            <a href="#">Web & App Development <br><br>Sir Rizwan</a>
+        <div class="course">
+            <div class="title"><a href="#">Web & App Development </a></div>
             
             <img src="https://gstatic.com/classroom/themes/img_bookclub.jpg" alt="tts">
-            <span class="rizwan"><img src="	https://lh3.googleusercontent.com/a-/ALV-UjVdUBLPlJmTC5lrpptV3CkjsCEt1Q3VM_VSDwJogNr3-Mw=s75-c" alt="rizwan"></span>
-            <footer>
+            <span class="profile-img"><img src="	https://lh3.googleusercontent.com/a-/ALV-UjVdUBLPlJmTC5lrpptV3CkjsCEt1Q3VM_VSDwJogNr3-Mw=s75-c" alt="rizwan"></span>
+            <footer class="course-footer">
                 <span ><a class="last" href="#"><i class="fa-regular fa-circle-user" style="color: #000000;"></i></a></span>
                 <span><a href="#" class="last-1"><i class="fa-regular fa-folder" style="color: #000000;"></i></a></span>
             </footer>
         </div>
     </div>
-
+</div>
 
 </body>
 
